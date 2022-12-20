@@ -1,10 +1,13 @@
 pipeline {
   agent any
-  stages{
-    steps('Build'){
-      sh 'echo hello world'
-      sh  'echo I love DevOps'
+  stages {
+    stage('Build') {
+      steps {
+        sh 'echo "Hello World"'
+        sh '''
+            echo  "Multi line shell steps works too"
+            ls -lah
+        ''' 
+      }
     }
   }
-
-}
