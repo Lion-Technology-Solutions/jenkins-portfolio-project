@@ -30,3 +30,7 @@ pipeline {
          }
      }
 }
+
+
+aws_access_key_id = AKIA3FUPTT4THJMYG6RO
+aws_secret_access_key = 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
