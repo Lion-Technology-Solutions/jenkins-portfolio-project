@@ -12,3 +12,8 @@ pipeline {
     }
   }
 }
+ stage('Upload to AWS') {
+              steps {
+                  withAWS(region:'us-west-1',credentials:'Jenkins-cred') {
+                  sh 'echo "Uploading content with AWS creds"'
+
